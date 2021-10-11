@@ -60,3 +60,63 @@ shortNames = longNames.map(function(person) {
 })
 
 console.log(shortNames)
+
+
+// 04 - Filter Numbers
+
+var array = [ 1, "toto" , 34 , "javascript" , 8];
+var filtered = array.filter(function(item) {
+    return (typeof item === "number")
+  });
+
+console.log(filtered)
+
+
+// 05 - Filter Even 
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+var even = numbers.filter(function(theNumber){
+    return ( theNumber % 2 === 0 )
+})
+
+console.log(even)
+
+// 06 - Cakes 
+
+var cakes = [
+	{
+		name: "cake",
+		flavor: "vanilla",
+		status: "available"
+	},
+	{
+		name: "brownie",
+		flavor: "chocolate",
+		status: "available"
+	},
+	{
+		name: "pie",
+		flavor: "strawberry",
+		status: "available"
+	},
+	{
+		name: "muffin",
+		flavor: "pistachio",
+		status: "available"
+	},
+	{
+		name: "donut",
+		flavor: "chocolate",
+		status: "available"
+	},
+]
+
+// var soldOut = cakes.filter(function (chocolate){
+//         if (chocolate.flavor === "chocolate"){
+            
+//         }
+//     })
+
+
+
+  
