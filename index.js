@@ -34,4 +34,29 @@ fs.readFile(varJour7, function (err, data) {
 
 
 var array = [1, 2, 3, 4, 5];
-var double =
+
+var doubles = array.map(function(num) {
+    return num * 2;
+});
+
+console.log(doubles);
+
+// 03 - Map Names
+
+var longNames = [
+	{
+		firstName: "Jane",
+		lastName: "Doe"
+	},
+	{
+		firstName: "John",
+		lastName: "Smith"
+	}
+]
+
+shortNames = longNames.map(function(person) {
+    var nameName = {name:`${person.firstName} ${person.lastName}`}
+    return nameName
+})
+
+console.log(shortNames)
