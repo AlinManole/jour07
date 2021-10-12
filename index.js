@@ -3,20 +3,22 @@ var fs = require("fs");
 
 // 01 - File System
 
-var varJour7 = "jour07.txt"
+var varJour7 = "./jour07.txt"
 
 fs.writeFile(varJour7, "Lets get ready !!",  function(err) {
-    if (err) {
-       return console.error(err);
+	if (err) {
+		console.error(err)
+		return ;
     }
 }) 
 
 
 fs.readFile(varJour7, function (err, data) {
     if (err) {
-       return console.error(err);
+		console.error(err)
+       return ;
     }
-    console.log("This is the new String ==> " + data.toString())
+    console.log(data.toString())
 })
 
 
